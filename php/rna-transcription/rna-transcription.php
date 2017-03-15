@@ -18,18 +18,18 @@ function toRna($chain)
         $chainSplitted = str_split($chain);
         foreach ($chainSplitted as $letter) {
             switch ($letter) {
-                case 'G':{
-                                    $newChain .= "C";
-                                    break;}
-                case 'C':{
-                                    $newChain .= 'G';
-                                    break;}
-                case 'T':{
-                                    $newChain .= 'A';
-                                    break;}
-                case 'A':{
-                                    $newChain .= 'U';
-                                    break;}
+                case 'G':
+                    $newChain .= "C";
+                    break;
+                case 'C':
+                    $newChain .= 'G';
+                    break;
+                case 'T':
+                    $newChain .= 'A';
+                    break;
+                case 'A':
+                    $newChain .= 'U';
+                    break;
             }
         }
         return $newChain;
